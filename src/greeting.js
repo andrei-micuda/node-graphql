@@ -1,11 +1,14 @@
-const handleGreeting = ({params}, res) => {
-  if (!params.user)
-  {
+const handleGreeting = ({ params, country }, res) => {
+  if (!params.user) {
     res.send("Hello World!");
   }
-  else
-  {
-    res.send(`Hello ${params.user}!`);
+  else {
+    if (country === "Romania") {
+      res.send(`Salut ${params.user}!`);
+    }
+    else {
+      res.send(`Hello ${params.user}!`);
+    }
   }
 }
 
