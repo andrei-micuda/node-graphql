@@ -1,0 +1,1 @@
+module.exports.key = "PAROLA_SUPER_SECRETA";

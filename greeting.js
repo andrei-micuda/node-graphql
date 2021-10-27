@@ -1,4 +1,4 @@
-const handleGreeting = ({ params, country }, res) => {
+module.exports.handleGreeting = ({ params, country }, res) => {
   if (!params.user) {
     res.send("Hello World!");
   }
@@ -11,5 +11,3 @@ const handleGreeting = ({ params, country }, res) => {
     }
   }
 }
-
-export default handleGreeting;

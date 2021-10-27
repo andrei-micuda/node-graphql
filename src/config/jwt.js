@@ -1,1 +1,0 @@
-export const key = "PAROLA_SUPER_SECRETA";
